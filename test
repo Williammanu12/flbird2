@@ -1,0 +1,6 @@
+var currentScene = 0;  //0 = splash sceen; 1= game screen; 3 = end screen
+var score = 0;
+var level = 1;  //level 1 frameRate =1 ; level 2 frameRate= 20
+var timerStart = 0;
+var bitmojiX = 100;
+var bitmojiY = 100;
