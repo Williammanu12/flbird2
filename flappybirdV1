@@ -1,0 +1,329 @@
+var drawEarsBody=function (bodyX,bodyY,bodyH){
+    fill(189, 127, 6);
+    ellipse(bodyX+(bodyH/100*45), bodyY-(bodyH/100*19), 14*bodyH/100, 27*bodyH/100);
+    ellipse(bodyX-45*bodyH/100, bodyY-18*bodyH/100, 14*bodyH/100, 27*bodyH/100);
+    ellipse(bodyX,bodyY-10,88*bodyH/100,127*bodyH/100);
+    fill(255, 221, 0);
+    ellipse(bodyX-46*bodyH/100, bodyY-7*bodyH/100, 5*bodyH/100, 5*bodyH/100);
+    ellipse(bodyX+46*bodyH/100, bodyY-7*bodyH/100, 5*bodyH/100, 5*bodyH/100);
+    
+    
+};
+var drawFace=function(bodyX,bodyY,bodyH){
+    
+fill(252, 247, 247);
+ellipse(bodyX-17*bodyH/100,bodyY-31*bodyH/100,22*bodyH/100,13*bodyH/100);
+
+fill(97, 71, 0);
+ellipse(bodyX-17*bodyH/100,bodyY-31*bodyH/100,11*bodyH/100,13*bodyH/100);
+
+
+fill(255, 250, 250);
+ellipse(bodyX+16*bodyH/100,bodyY-31*bodyH/100,22*bodyH/100,13*bodyH/100);
+
+fill(97,71,0);
+ellipse(bodyX+16*bodyH/100,bodyY-31*bodyH/100,11*bodyH/100,13*bodyH/100);
+
+fill(0, 0, 0);
+ellipse(bodyX+16*bodyH/100,bodyY-31*bodyH/100,5*bodyH/100,3*bodyH/100);
+ellipse(bodyX-17*bodyH/100,bodyY-31*bodyH/100,4*bodyH/100,3*bodyH/100);
+
+fill(255, 255, 255);
+arc(bodyX, bodyY+10*bodyH/100, 69*bodyH/100, 41*bodyH/100, -2, 183);
+line(bodyX+35*bodyH/100, bodyY+11*bodyH/100, bodyX-35*bodyH/100, bodyY+9*bodyH/100);
+line(bodyX-2*bodyH/100, bodyY+32*bodyH/100, bodyX-1*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX+12*bodyH/100, bodyY+30*bodyH/100, bodyX+13*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX+22*bodyH/100, bodyY+26*bodyH/100, bodyX+23*bodyH/100, bodyY+11*bodyH/100);
+line(bodyX-17*bodyH/100, bodyY+28*bodyH/100, bodyX-17*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX-27*bodyH/100, bodyY+25*bodyH/100, bodyX-26*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX+31*bodyH/100, bodyY+18*bodyH/100, bodyX-32*bodyH/100, bodyY+18*bodyH/100);
+fill(189, 128, 6);
+arc(bodyX-1*bodyH/100, bodyY-2*bodyH/100, 27*bodyH/100, 29*bodyH/100, 180, 360);
+fill(189, 128, 6);
+arc(bodyX-1*bodyH/100, bodyY-2*bodyH/100, 27*bodyH/100, 29*bodyH/100, 180, 360);
+
+fill(0, 0, 0);
+arc(bodyX-8*bodyH/100, bodyY-2*bodyH/100, 10*bodyH/100, 13*bodyH/100, 180, 360);
+arc(bodyX+6*bodyH/100, bodyY-2*bodyH/100, 10*bodyH/100, 13*bodyH/100, 180, 360);
+line(bodyX-3*bodyH/100, bodyY-27*bodyH/100, bodyX-10*bodyH/100, bodyY-13*bodyH/100);
+line(bodyX+3*bodyH/100, bodyY-27*bodyH/100, bodyX+9*bodyH/100, bodyY-12*bodyH/100);
+
+
+
+
+
+
+
+
+};
+var drawHat=function(bodyX,bodyY,bodyH){
+fill(0, 0, 0);
+ellipse(bodyX-36*bodyH/100,bodyY-47*bodyH/100,26*bodyH/100,18*bodyH/100);
+ellipse(bodyX-13*bodyH/100,bodyY-72*bodyH/100,26*bodyH/100,31*bodyH/100);
+ellipse(bodyX+10*bodyH/100,bodyY-67*bodyH/100,35*bodyH/100,30*bodyH/100);
+ellipse(bodyX+25*bodyH/100,bodyY-64*bodyH/100,30*bodyH/100,24*bodyH/100);
+ellipse(bodyX+42*bodyH/100,bodyY-47*bodyH/100,25*bodyH/100,18*bodyH/100);
+
+
+fill(3, 89, 9);
+arc(bodyX+2*bodyH/100, bodyY-51*bodyH/100, 83*bodyH/100, 87*bodyH/100, 180, 360);
+
+fill(250, 247, 247);
+rect(bodyX-7*bodyH/100, bodyY-64*bodyH/100, 16*bodyH/100, 9*bodyH/100);
+ellipse(bodyX+2*bodyH/100,bodyY-61*bodyH/100, 5*bodyH/100, 5*bodyH/100);
+
+
+triangle(bodyX+9*bodyH/100,bodyY-55*bodyH/100, bodyX-5*bodyH/100, bodyY-55*bodyH/100, bodyX+1*bodyH/100, bodyY-59*bodyH/100);
+
+
+
+
+};
+var drawBody= function(bodyX,bodyY,bodyH){
+fill(0, 0, 0);
+arc(bodyX-2*bodyH/100, bodyY+97*bodyH/100, 186*bodyH/100, 87*bodyH/100, 180, 360);
+
+
+stroke(255, 255, 255);
+strokeWeight(4);
+line(bodyX-53*bodyH/100, bodyY+67*bodyH/100, bodyX-53*bodyH/100, bodyY+91*bodyH/100);
+line(bodyX-41*bodyH/100, bodyY+82*bodyH/100, bodyX-53*bodyH/100, bodyY+93*bodyH/100);
+line(bodyX-40*bodyH/100, bodyY+82*bodyH/100, bodyX-30*bodyH/100, bodyY+93*bodyH/100);
+line(bodyX-27*bodyH/100, bodyY+67*bodyH/100, bodyX-28*bodyH/100, bodyY+91*bodyH/100);
+line(bodyX-4*bodyH/100, bodyY+67*bodyH/100, bodyX-5*bodyH/100, bodyY+91*bodyH/100);
+line(bodyX-4*bodyH/100, bodyY+66*bodyH/100, bodyX+7*bodyH/100, bodyY+80*bodyH/100);
+line(bodyX+18*bodyH/100, bodyY+66*bodyH/100, bodyX+7*bodyH/100, bodyY+79*bodyH/100);
+line(bodyX+21*bodyH/100, bodyY+66*bodyH/100, bodyX+21*bodyH/100, bodyY+91*bodyH/100);
+
+};
+var drawBitmoji= function(bodyX, bodyY,bodyH) {
+    noStroke();
+drawEarsBody(bodyX,bodyY,bodyH);
+drawFace(bodyX,bodyY,bodyH);
+drawHat(bodyX,bodyY,bodyH);
+drawBody(bodyX,bodyY,bodyH);
+};
+
+var currentScene = 0;
+var numHearts=120;
+var score=0;
+
+var stillPlaying=true;
+var heartsPassed=0;
+var StickSpeed=1;
+var endScreen= function()
+{
+
+    background(255, 0, 0);
+    textSize(30);
+    text("Your score was "+ score,50,150);
+
+};
+
+//BUTTON CLASS
+var Button = function(config) {
+    this.x = config.x || 0;
+    this.y = config.y || 0;
+    this.width = config.width || 87;
+    this.height = config.height || 43;
+    this.label = config.label || "Click";
+    this.onClick = config.onClick || function() {};
+};
+
+Button.prototype.draw = function() {
+    fill(0, 234, 255);
+    rect(this.x, this.y, this.width, this.height, 5);
+    fill(0, 0, 0);
+    textSize(19);
+    textAlign(LEFT, TOP);
+    text(this.label, this.x+10, this.y+this.height/4);
+};
+
+Button.prototype.isMouseInside = function() {
+    return mouseX > this.x &&
+           mouseX < (this.x + this.width) &&
+           mouseY > this.y &&
+           mouseY < (this.y + this.height);
+};
+
+Button.prototype.handleMouseClick = function() {
+    if (this.isMouseInside()) {
+        this.onClick();
+    }
+};
+
+//BUTTONS
+var startbtn = new Button({
+    x: 150,
+    y: 210,
+    label: "START",
+    onClick: function() {
+        currentScene=1;
+       
+        
+    }
+});
+
+//CHARACTER CLASS
+var Beaver = function(x, y) {
+    this.x = x;
+    this.y = y;
+    this.sticks = 0; 
+};
+
+Beaver.prototype.draw = function() {
+    this.y = constrain(this.y, 0, height-50);
+     image(this.img, this.x, this.y, 25, 25);
+     
+
+    
+};
+
+Beaver.prototype.hop = function() {
+    this.img = getImage("creatures/Hopper-Jumping");
+    this.y -= 5;
+}; 
+
+Beaver.prototype.fall = function() {
+    this.img = getImage("creatures/Hopper-Happy");
+    this.y += 5;
+};
+
+Beaver.prototype.checkForStickHit = function(stick) {
+    if ((stick.x >= this.x && stick.x <= (this.x + 40)) &&
+        (stick.y >= this.y && stick.y <= (this.y + 40))) {
+            
+         
+            if(stillPlaying === false){
+        endScreen();}
+    }
+};
+var beaver = new Beaver(40, 200);
+
+//MOVING OBJECTS
+var Stick = function(x, y) {
+    this.x = x;
+    this.y = 0;
+    this.height=(round(random(33,170)));
+    
+};
+
+var Stick2= function(x,y){
+    this.x = x;
+    this.y = (round(random(180, 331)));
+    this.height=height;
+};
+
+Stick.prototype.draw = function() {
+  this.height = constrain(this.height, 0, height+150);
+
+ rect(this.x,this.y,35,this.height);
+ 
+}; 
+
+Stick2.prototype.draw = function() {
+ this.y = constrain(this.y, 0, height+50); 
+ 
+ rect(this.x,this.y,35,this.height);
+};
+
+
+
+var sticks = [];
+for (var i = 0; i < 320; i++) {
+    
+    sticks.push(new Stick( i*140, random(20, 260)));
+}
+var sticks2 = [];
+for (var i = 0; i < 320; i++) {  
+    sticks.push(new Stick2( i*140 , random(20, 260)));
+}
+
+
+//SCREENS
+var splashScreen= function(){
+
+    background(255, 0, 0);
+    fill(0, 0, 0);
+    textSize(25);
+    text("william manu",125,110);
+    textSize(49);
+    text(" Flappy Bird",63,51);
+    textSize(12);
+    
+    drawBitmoji(200,323,56);
+    startbtn.draw();
+
+};
+
+var gameScreen = function() {
+    
+    // static
+    background(227, 254, 255);
+    fill(130, 79, 43);
+    rectMode(CORNER);
+    rect(0, height*0.90, width, height*0.10);
+    
+    
+    
+   if(stillPlaying === true){
+    
+    for (var i = 0; i < sticks.length; i++) {
+        sticks[i].draw();
+        beaver.checkForStickHit(sticks[i]);
+        sticks[i].x -= StickSpeed;
+    }
+    
+    if (sticks[0].x>400){stillPlaying = false;}
+    
+ 
+    if (beaver.x > sticks.x || beaver.x > sticks2.x) {
+        score++;
+    }
+  
+        var grassXs = [];
+for (var i = 0; i < 25; i++) { 
+    grassXs.push(i*20);
+}
+
+ for (var i = 0; i < grassXs.length; i++) {
+        image(getImage("cute/GrassBlock"), grassXs[i], height*0.85, 20, 67);
+        grassXs[i] -= 1;
+        if (grassXs[i] <= -20) {
+            grassXs[i] = width;
+        }
+    }
+
+    
+    
+    textSize(18);
+    text("Score: " + score, 20, 30);
+    
+    
+    
+    if (keyIsPressed && key.code === 32) {
+        beaver.hop();
+    } else {
+        beaver.fall();
+    }
+    beaver.draw();
+   }
+
+};
+
+
+
+
+mouseClicked = function() {
+    startbtn.handleMouseClick();
+
+};
+
+
+draw = function() {
+    
+    if(currentScene ===0){splashScreen();}
+    else if( currentScene===1){gameScreen();}
+    else if ( currentScene===2){endScreen();}
+    
+};
