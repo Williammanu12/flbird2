@@ -107,10 +107,10 @@ drawBody(bodyX,bodyY,bodyH);
 var currentScene = 0;
 var numHearts=120;
 var score=0;
-
+var timer=0;
 var stillPlaying=true;
-var heartsPassed=0;
 var StickSpeed=1;
+
 var endScreen= function()
 {
 
@@ -190,17 +190,16 @@ Beaver.prototype.fall = function() {
 };
 
 Beaver.prototype.checkForStickHit = function(stick) {
-    if ((stick.x >= this.x && stick.x <= (this.x + 40)) &&
-        (stick.y >= this.y && stick.y <= (this.y + 40))) {
+    if (stick.x < this.x + 25 && stick.x + 35 > this.x &&
+        stick.y < this.y + 25 && stick.y + stick.height > this.y ){
+            stillPlaying=false;
             
-         
-            if(stillPlaying === false){
-        endScreen();}
     }
 };
 var beaver = new Beaver(40, 200);
 
 //MOVING OBJECTS
+
 var Stick = function(x, y) {
     this.x = x;
     this.y = 0;
@@ -210,8 +209,9 @@ var Stick = function(x, y) {
 
 var Stick2= function(x,y){
     this.x = x;
-    this.y = (round(random(180, 331)));
+    this.y = (round(random(195, 331)));
     this.height=height;
+    
 };
 
 Stick.prototype.draw = function() {
@@ -272,14 +272,18 @@ var gameScreen = function() {
         sticks[i].draw();
         beaver.checkForStickHit(sticks[i]);
         sticks[i].x -= StickSpeed;
+        if (millis()-timer>=2300){
+        score++;
+        
+       timer=millis();
     }
+        
+    }
+   
     
-    if (sticks[0].x>400){stillPlaying = false;}
     
  
-    if (beaver.x > sticks.x || beaver.x > sticks2.x) {
-        score++;
-    }
+    
   
         var grassXs = [];
 for (var i = 0; i < 25; i++) { 
@@ -324,6 +328,8 @@ draw = function() {
     
     if(currentScene ===0){splashScreen();}
     else if( currentScene===1){gameScreen();}
-    else if ( currentScene===2){endScreen();}
+    else if( stillPlaying===false){currentScene=2;}
+    while(stillPlaying===false){endScreen();}
     
 };
+
