@@ -1,0 +1,69 @@
+
+background(255, 255, 255);
+
+var head = function (headX,headY,headH)
+{
+    var ratio = headH/100; 
+    
+    fill(242, 231, 181); //skin tone
+    noStroke();
+    rect(headX-10*ratio,headY+40*ratio,23*ratio,23*ratio); //neck
+    
+    //head
+    stroke(0, 0, 0);
+    fill(242, 231, 181);
+    ellipse(headX,headY,88*ratio,100*ratio); //head
+        
+    //hair
+    fill(0, 0, 0);
+    quad(headX-40*ratio, headY-55*ratio, headX-55*ratio, headY-10*ratio, headX-40*ratio,        headY+5*ratio, headX-10*ratio, headY-60*ratio);//left hair
+    quad(headX+15*ratio, headY-60*ratio, headX+40*ratio, headY+15*ratio, headX+55*ratio,        headY-10*ratio, headX+40*ratio, headY-55*ratio);//right hair
+    ellipse(headX-1*ratio,headY-52*ratio,78*ratio,32*ratio); //top hair
+    
+    //sunglasses
+    rect(headX-25*ratio,headY-20*ratio,18*ratio,18*ratio); //left shade
+    rect(headX+10*ratio,headY-20*ratio,19*ratio,19*ratio); //right shade
+    strokeWeight(7);
+    line(headX+10*ratio,headY-10*ratio,headX-10*ratio,headY-10*ratio); //center
+    line(headX+10*ratio,headY-10*ratio,headX+35*ratio,headY-10*ratio); //rifht
+    line(headX-30*ratio,headY-15*ratio,headX-10*ratio,headY-10*ratio); //left
+    
+    //smile
+    fill(255, 255, 255); //white
+    bezier(headX+25*ratio, headY+20*ratio, headX+15*ratio, headY+45*ratio, headX-35*ratio,      headY+25*ratio, headX-25*ratio, headY+20*ratio);//mouth
+    
+    //nose
+    strokeWeight(2);
+    fill(242, 231, 181); //skin tone
+    bezier(headX+10*ratio, headY-5*ratio, headX+43*ratio, headY+15*ratio, headX, headY+25*ratio, headX-5*ratio, headY+1*ratio); //nose
+};
+    
+var body = function(bodyX,bodyY,bodyH)
+{
+    
+    var ratio = bodyH/100;
+    
+    //body
+    stroke(0, 0, 0);
+    fill(196, 196, 196); //grey
+    rect(bodyX-60*ratio,bodyY+60*ratio,117*ratio,92*ratio); //body
+    line(bodyX-33*ratio,bodyY+152*ratio,bodyX-38*ratio,bodyY+90*ratio); //left arm
+    line(bodyX+33*ratio,bodyY+150*ratio,bodyX+38*ratio,bodyY+90*ratio); //right arm
+    
+    //initials
+    fill(112, 94, 166); //blue
+    textSize(35*ratio);
+    text("DD",bodyX-25*ratio,bodyY+105*ratio,105*ratio,85*ratio);
+    
+    //chain
+    fill(196, 196, 196); //grey
+    stroke(255, 234, 41);
+    bezier(bodyX+15*ratio, bodyY+60*ratio, bodyX+5*ratio, bodyY+80*ratio, bodyX+1*ratio, bodyY+115*ratio, bodyX-20*ratio, bodyY+60*ratio);
+        
+};
+
+var drawBit = function(x,y,h)
+{
+    head(x,y,h);
+    body(x,y,h);
+};
