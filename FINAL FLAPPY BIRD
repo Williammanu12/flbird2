@@ -1,0 +1,404 @@
+var drawEarsBody=function (bodyX,bodyY,bodyH){
+    fill(189, 127, 6);
+    ellipse(bodyX+(bodyH/100*45), bodyY-(bodyH/100*19), 14*bodyH/100, 27*bodyH/100);
+    ellipse(bodyX-45*bodyH/100, bodyY-18*bodyH/100, 14*bodyH/100, 27*bodyH/100);
+    ellipse(bodyX,bodyY-10,88*bodyH/100,127*bodyH/100);
+    fill(255, 221, 0);
+    ellipse(bodyX-46*bodyH/100, bodyY-7*bodyH/100, 5*bodyH/100, 5*bodyH/100);
+    ellipse(bodyX+46*bodyH/100, bodyY-7*bodyH/100, 5*bodyH/100, 5*bodyH/100);
+    
+    
+};
+var drawFace=function(bodyX,bodyY,bodyH){
+    
+fill(252, 247, 247);
+ellipse(bodyX-17*bodyH/100,bodyY-31*bodyH/100,22*bodyH/100,13*bodyH/100);
+
+fill(97, 71, 0);
+ellipse(bodyX-17*bodyH/100,bodyY-31*bodyH/100,11*bodyH/100,13*bodyH/100);
+
+
+fill(255, 250, 250);
+ellipse(bodyX+16*bodyH/100,bodyY-31*bodyH/100,22*bodyH/100,13*bodyH/100);
+
+fill(97,71,0);
+ellipse(bodyX+16*bodyH/100,bodyY-31*bodyH/100,11*bodyH/100,13*bodyH/100);
+
+fill(0, 0, 0);
+ellipse(bodyX+16*bodyH/100,bodyY-31*bodyH/100,5*bodyH/100,3*bodyH/100);
+ellipse(bodyX-17*bodyH/100,bodyY-31*bodyH/100,4*bodyH/100,3*bodyH/100);
+
+fill(255, 255, 255);
+arc(bodyX, bodyY+10*bodyH/100, 69*bodyH/100, 41*bodyH/100, -2, 183);
+line(bodyX+35*bodyH/100, bodyY+11*bodyH/100, bodyX-35*bodyH/100, bodyY+9*bodyH/100);
+line(bodyX-2*bodyH/100, bodyY+32*bodyH/100, bodyX-1*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX+12*bodyH/100, bodyY+30*bodyH/100, bodyX+13*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX+22*bodyH/100, bodyY+26*bodyH/100, bodyX+23*bodyH/100, bodyY+11*bodyH/100);
+line(bodyX-17*bodyH/100, bodyY+28*bodyH/100, bodyX-17*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX-27*bodyH/100, bodyY+25*bodyH/100, bodyX-26*bodyH/100, bodyY+10*bodyH/100);
+line(bodyX+31*bodyH/100, bodyY+18*bodyH/100, bodyX-32*bodyH/100, bodyY+18*bodyH/100);
+fill(189, 128, 6);
+arc(bodyX-1*bodyH/100, bodyY-2*bodyH/100, 27*bodyH/100, 29*bodyH/100, 180, 360);
+fill(189, 128, 6);
+arc(bodyX-1*bodyH/100, bodyY-2*bodyH/100, 27*bodyH/100, 29*bodyH/100, 180, 360);
+
+fill(0, 0, 0);
+arc(bodyX-8*bodyH/100, bodyY-2*bodyH/100, 10*bodyH/100, 13*bodyH/100, 180, 360);
+arc(bodyX+6*bodyH/100, bodyY-2*bodyH/100, 10*bodyH/100, 13*bodyH/100, 180, 360);
+line(bodyX-3*bodyH/100, bodyY-27*bodyH/100, bodyX-10*bodyH/100, bodyY-13*bodyH/100);
+line(bodyX+3*bodyH/100, bodyY-27*bodyH/100, bodyX+9*bodyH/100, bodyY-12*bodyH/100);
+
+
+
+
+
+
+
+
+};
+var drawHat=function(bodyX,bodyY,bodyH){
+fill(0, 0, 0);
+ellipse(bodyX-36*bodyH/100,bodyY-47*bodyH/100,26*bodyH/100,18*bodyH/100);
+ellipse(bodyX-13*bodyH/100,bodyY-72*bodyH/100,26*bodyH/100,31*bodyH/100);
+ellipse(bodyX+10*bodyH/100,bodyY-67*bodyH/100,35*bodyH/100,30*bodyH/100);
+ellipse(bodyX+25*bodyH/100,bodyY-64*bodyH/100,30*bodyH/100,24*bodyH/100);
+ellipse(bodyX+42*bodyH/100,bodyY-47*bodyH/100,25*bodyH/100,18*bodyH/100);
+
+
+fill(3, 89, 9);
+arc(bodyX+2*bodyH/100, bodyY-51*bodyH/100, 83*bodyH/100, 87*bodyH/100, 180, 360);
+
+fill(250, 247, 247);
+rect(bodyX-7*bodyH/100, bodyY-64*bodyH/100, 16*bodyH/100, 9*bodyH/100);
+ellipse(bodyX+2*bodyH/100,bodyY-61*bodyH/100, 5*bodyH/100, 5*bodyH/100);
+
+
+triangle(bodyX+9*bodyH/100,bodyY-55*bodyH/100, bodyX-5*bodyH/100, bodyY-55*bodyH/100, bodyX+1*bodyH/100, bodyY-59*bodyH/100);
+
+
+
+
+};
+var drawBody= function(bodyX,bodyY,bodyH){
+fill(0, 0, 0);
+arc(bodyX-2*bodyH/100, bodyY+97*bodyH/100, 186*bodyH/100, 87*bodyH/100, 180, 360);
+
+
+stroke(255, 255, 255);
+strokeWeight(4);
+line(bodyX-53*bodyH/100, bodyY+67*bodyH/100, bodyX-53*bodyH/100, bodyY+91*bodyH/100);
+line(bodyX-41*bodyH/100, bodyY+82*bodyH/100, bodyX-53*bodyH/100, bodyY+93*bodyH/100);
+line(bodyX-40*bodyH/100, bodyY+82*bodyH/100, bodyX-30*bodyH/100, bodyY+93*bodyH/100);
+line(bodyX-27*bodyH/100, bodyY+67*bodyH/100, bodyX-28*bodyH/100, bodyY+91*bodyH/100);
+line(bodyX-4*bodyH/100, bodyY+67*bodyH/100, bodyX-5*bodyH/100, bodyY+91*bodyH/100);
+line(bodyX-4*bodyH/100, bodyY+66*bodyH/100, bodyX+7*bodyH/100, bodyY+80*bodyH/100);
+line(bodyX+18*bodyH/100, bodyY+66*bodyH/100, bodyX+7*bodyH/100, bodyY+79*bodyH/100);
+line(bodyX+21*bodyH/100, bodyY+66*bodyH/100, bodyX+21*bodyH/100, bodyY+91*bodyH/100);
+
+};
+var drawBitmoji= function(bodyX, bodyY,bodyH) {
+    noStroke();
+drawEarsBody(bodyX,bodyY,bodyH);
+drawFace(bodyX,bodyY,bodyH);
+drawHat(bodyX,bodyY,bodyH);
+drawBody(bodyX,bodyY,bodyH);
+}; // William bitmoji
+
+var head = function (headX,headY,headH)
+{
+    var ratio = headH/100; 
+    
+    fill(242, 231, 181); //skin tone
+    noStroke();
+    rect(headX-10*ratio,headY+40*ratio,23*ratio,23*ratio); //neck
+    
+    //head
+    stroke(0, 0, 0);
+    fill(242, 231, 181);
+    ellipse(headX,headY,88*ratio,100*ratio); //head
+        
+    //hair
+    fill(0, 0, 0);
+    quad(headX-40*ratio, headY-55*ratio, headX-55*ratio, headY-10*ratio, headX-40*ratio,        headY+5*ratio, headX-10*ratio, headY-60*ratio);//left hair
+    quad(headX+15*ratio, headY-60*ratio, headX+40*ratio, headY+15*ratio, headX+55*ratio,        headY-10*ratio, headX+40*ratio, headY-55*ratio);//right hair
+    ellipse(headX-1*ratio,headY-52*ratio,78*ratio,32*ratio); //top hair
+    
+    //sunglasses
+    rect(headX-25*ratio,headY-20*ratio,18*ratio,18*ratio); //left shade
+    rect(headX+10*ratio,headY-20*ratio,19*ratio,19*ratio); //right shade
+    strokeWeight(7);
+    line(headX+10*ratio,headY-10*ratio,headX-10*ratio,headY-10*ratio); //center
+    line(headX+10*ratio,headY-10*ratio,headX+35*ratio,headY-10*ratio); //rifht
+    line(headX-30*ratio,headY-15*ratio,headX-10*ratio,headY-10*ratio); //left
+    
+    //smile
+    fill(255, 255, 255); //white
+    bezier(headX+25*ratio, headY+20*ratio, headX+15*ratio, headY+45*ratio, headX-35*ratio,      headY+25*ratio, headX-25*ratio, headY+20*ratio);//mouth
+    
+    //nose
+    strokeWeight(2);
+    fill(242, 231, 181); //skin tone
+    bezier(headX+10*ratio, headY-5*ratio, headX+43*ratio, headY+15*ratio, headX, headY+25*ratio, headX-5*ratio, headY+1*ratio); //nose
+};
+    
+var body = function(bodyX,bodyY,bodyH)
+{
+    
+    var ratio = bodyH/100;
+    
+    //body
+    stroke(0, 0, 0);
+    fill(196, 196, 196); //grey
+    rect(bodyX-60*ratio,bodyY+60*ratio,117*ratio,92*ratio); //body
+    line(bodyX-33*ratio,bodyY+152*ratio,bodyX-38*ratio,bodyY+90*ratio); //left arm
+    line(bodyX+33*ratio,bodyY+150*ratio,bodyX+38*ratio,bodyY+90*ratio); //right arm
+    
+    //initials
+    fill(112, 94, 166); //blue
+    textSize(35*ratio);
+    text("DD",bodyX-25*ratio,bodyY+105*ratio,105*ratio,85*ratio);
+    
+    //chain
+    fill(196, 196, 196); //grey
+    stroke(255, 234, 41);
+    bezier(bodyX+15*ratio, bodyY+60*ratio, bodyX+5*ratio, bodyY+80*ratio, bodyX+1*ratio, bodyY+115*ratio, bodyX-20*ratio, bodyY+60*ratio);
+        
+};
+
+var drawBit = function(x,y,h)
+{
+    head(x,y,h);
+    body(x,y,h);
+}; // David bitmoji
+
+
+var currentScene = 0; // checks for current scene
+var score=0; // score counter
+var timer=0;// timer for the game to see check if you have passed the sticks
+var stillPlaying=true; // stillplaying is set to true when the game first starts 
+var StickSpeed=1; //  where the speed for the sticks is controlled
+
+var endScreen= function()
+{
+
+    background(255, 0, 0);
+    textSize(30);
+    text("Your score was "+ score,50,150);
+
+}; // endscreen that pops up when the game ends and shows your score 
+
+//BUTTON CLASS
+var Button = function(config) {
+    this.x = config.x || 0;
+    this.y = config.y || 0;
+    this.width = config.width || 87;
+    this.height = config.height || 43;
+    this.label = config.label || "Click";
+    this.onClick = config.onClick || function() {};
+};
+
+Button.prototype.draw = function() {
+    fill(0, 234, 255);
+    rect(this.x, this.y, this.width, this.height, 5);
+    fill(0, 0, 0);
+    textSize(19);
+    textAlign(LEFT, TOP);
+    text(this.label, this.x+10, this.y+this.height/4);
+};
+
+Button.prototype.isMouseInside = function() {
+    return mouseX > this.x &&
+           mouseX < (this.x + this.width) &&
+           mouseY > this.y &&
+           mouseY < (this.y + this.height);
+};
+
+Button.prototype.handleMouseClick = function() {
+    if (this.isMouseInside()) {
+        this.onClick();
+    }
+};
+
+//BUTTONS
+var startbtn = new Button({
+    x: 150,
+    y: 210,
+    label: "START",
+    onClick: function() {
+        currentScene=1;
+       
+        
+    }
+}); // button
+
+//CHARACTER CLASS
+var Beaver = function(x, y) {
+    this.x = x;
+    this.y = y;
+     
+}; /// codes for the beavers x and y positions
+
+Beaver.prototype.draw = function() {
+    this.y = constrain(this.y, 0, height-50);
+     image(this.img, this.x, this.y, 25, 25);
+     
+
+    
+}; // this draws the beaver at its current x and y postions and the constrain stops the beaver fromo going of the screen 
+
+Beaver.prototype.hop = function() {
+    this.img = getImage("creatures/Hopper-Jumping");
+    this.y -= 5;
+}; // this codes for the beaver to move up the screen by 5 pixel when you hit the space button
+
+Beaver.prototype.fall = function() {
+    this.img = getImage("creatures/Hopper-Happy");
+    this.y += 5;
+}; // this codes for the beavers falling down the screen when you let go of the space button 
+Beaver.prototype.checkForStickHit = function(stick) {
+    if (stick.x < this.x + 25 && stick.x + 35 > this.x &&
+        stick.y < this.y + 25 && stick.y + stick.height > this.y ){
+            stillPlaying=false;
+             while(stillPlaying===false){endScreen();}
+    }
+}; // checks if you and the x & y of the beaver is the same as the x & y as the sticks and if they are then still playing will be false so the endscreen will pop up 
+var beaver = new Beaver(40, 200);
+
+//MOVING OBJECTS
+
+var Stick = function(x, y) {
+    this.x = x;
+    this.y = 0;
+    this.height=(round(random(33,170)));
+    
+}; // codes for the top row of the sticks and gives them a random height
+
+var Stick2= function(x,y){
+    this.x = x;
+    this.y = (round(random(195, 331)));
+    this.height=height;
+    
+}; // codes for the bottom row sticks and gives them a random y value 
+
+Stick.prototype.draw = function() { 
+  this.height = constrain(this.height, 0, height+150);
+
+ rect(this.x,this.y,35,this.height);
+ 
+};  // draws the sticks at the top 
+
+Stick2.prototype.draw = function() {
+ this.y = constrain(this.y, 0, height+50); 
+ 
+ rect(this.x,this.y,35,this.height);
+}; // draws the sticks at the bottom
+
+
+
+var sticks = [];
+for (var i = 0; i < 520; i++) {
+    
+    sticks.push(new Stick( i*140, random(20, 260)));
+} // creates a array for the top row of sticks and gives it 520 instances of sticks  then draws anthor one after the first one is drawn at a random x pos between 20 and 260 pixels
+var sticks2 = [];
+for (var i = 0; i < 520; i++) {  
+    sticks.push(new Stick2( i*140 , random(20, 260)));
+}  // creates a array for the top row of sticks and gives it 520 instances of sticks  then draws anthor one after the first one is drawn at a random x pos between 20 and 260 pixels
+
+
+//SCREENS
+var splashScreen= function(){
+
+    background(255, 0, 0);
+    fill(0, 0, 0);
+    textSize(25);
+    text("william manu",125,110);
+    textSize(49);
+    text(" Flappy Bird",63,51);
+    textSize(12);
+    
+    drawBitmoji(120,323,56);
+    drawBit(284,294,56);
+    startbtn.draw();
+
+}; // this is the screen that pops up when you first start the game equid with the start button that brings you to the game screen
+
+var gameScreen = function() {
+    
+    // static
+    background(227, 254, 255);
+    fill(130, 79, 43);
+    rectMode(CORNER);
+    rect(0, height*0.90, width, height*0.10);
+    
+    
+    
+   if(stillPlaying === true){
+    
+    for (var i = 0; i < sticks.length; i++) {
+        sticks[i].draw();
+        beaver.checkForStickHit(sticks[i]);
+        sticks[i].x -= StickSpeed;
+        if (millis()-timer>=2330){
+        score++;
+        
+       timer=millis();
+    }
+        
+    }
+   
+    
+    
+ 
+    
+  
+        var grassXs = [];
+for (var i = 0; i < 25; i++) { 
+    grassXs.push(i*20);
+}
+
+ for (var i = 0; i < grassXs.length; i++) {
+        image(getImage("cute/GrassBlock"), grassXs[i], height*0.85, 20, 67);
+        grassXs[i] -= 1;
+        if (grassXs[i] <= -20) {
+            grassXs[i] = width;
+        }
+    }
+
+    
+    
+    textSize(18);
+    text("Score: " + score, 20, 30);
+    
+    
+    
+    if (keyIsPressed && key.code === 32) {
+        beaver.hop();
+    } else {
+        beaver.fall();
+    }
+    beaver.draw();
+   }
+
+}; // game screen that includes the key pressed function that is set to the space bar and when its is pressed the beaver "hops" 5 pixels and when it isn't pressed it " falls" by 5 pixels
+
+// also includes the algorithm that keeps track of the score, it checks if the beaver has hit sticks and if not and 2.3 seconds has passed it adds one to score
+
+// also includes the for loop that draws the grass at the bottom of the screen
+
+
+
+mouseClicked = function() {
+    startbtn.handleMouseClick();
+
+}; // handles the mouseclick of the start button
+
+
+draw = function() {
+    
+    if(currentScene ===0){splashScreen();}
+    else if( currentScene===1){gameScreen();}
+    else if( stillPlaying===false){currentScene=2;}
+   
+    
+}; // draw function that draws that set current scenes you see on the screen
